@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link href="responsive-carousel.css" rel="stylesheet"> -->
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
@@ -244,13 +245,121 @@
         @media screen and (min-width: 481px) and (max-width: 1224px) {}
     </style>
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="http://slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="http://slick/slick-theme.css" />
+
 </head>
 
 <body>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt debitis, cumque quaerat corrupti aspernatur aut,
-    consequuntur accusamus velit sed velss laborum id mollitia reprehenderit possimus unde ut quam culpa molestiae.
+    <header>
+        <div class="container-fuild">
+            <div class="row bg-info">
+                <div class="col-7">
+                    <span>
+                        <i class="fa fa-map-marker-alt"></i>
+                        Find Nearest Location
+                    </span>
+                    <span>
+                        <i class="fa fa-mobile-alt"></i>
+                        Call Us:1-800-123-4567
+                    </span>
+                    <span>
+                        <i class="fa fa-clock"></i>
+                        Mon-Sat:7:00am-6:00pm/Sun:8:00am-5:00pm
+                    </span>
+                </div>
+                <div class="col text-end">
+                    <span>News & Media</span>
+                    <span>Careers</span>
+                    <span>Contact</span>
+                    <span>
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-twitter-square"></i>
+                        <i class="fa fa-linkedin-square"></i>
+                        <i class="fa fa-rss-square"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light navigation ">
+            <div class="container">
+                <a href="#" class="brand">
+                    <div class="col d-flex">
+                        <img src="images\Logo Icon.png" class="logo-icon" alt="logo-icon">
+                        <div class="col">
+                            <p class="mb-0"><b class="logo-icon-text">Carwash</b>
+                            </p>
+                            <p class="mt-0 logo-icon-text2">Autowash & Detailing template!</p>
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ps-5 ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item ms-4">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">SERVICES & PRICING</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">UNLIMITED WASH CLUB</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">LOCATIONS</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">PAGES</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">NEWS</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <!-- <a class="nav-link" href="#">PAGES</a> -->
+                            <i class="fa fa-search"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="container-fuild">
+    <div class="row">
+        <div class="carousel">
+
+            <!-- Images here -->
+            <div class="carousel-inner">
+              <div class="slide active">
+                <a href=""><img src="./images/Bg.png"></a> 
+              </div>
+              <div class="slide">
+                <a href=""><img src="./images/Img Bg.png"></a> 
+              </div>
+              <div class="slide">
+                <a href=""><img src="./images/Img Bg3.png"></a> 
+              </div>
+            </div>
+            
+            <!-- Arrows navigation -->
+            <div class="arrow arrow-left"></div>
+            <div class="arrow arrow-right"></div>
+            
+          </div>
+    </div>
+</div>
+    </header>
     <section class='about_intro'>
         <div class="container pb-5 pt-5">
             <div class="row  d-flex justify-content-center ">
@@ -663,9 +772,10 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="responsive-carousel.js"></script>
+    
+    <script type="text/javascript" src="http://slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

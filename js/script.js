@@ -6,5 +6,6 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3
       });
+      $('.carousel').BannerSlide(opts);
+
   });
-      
