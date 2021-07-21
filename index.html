@@ -10,19 +10,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <script src="bootstrap-5.0.2-dist\bootstrap-5.0.2-dist\js\bootstrap.min.js"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-        body {
+        /* var textColor:black; */
+
+        * {
             padding: 0%;
             margin: 0%;
             box-sizing: border-box;
+        }
+
+        body {
+
             font-family: 'Mulish', sans-serif;
         }
+
+        /* about intro */
+        .about_intro_img {
+            width: 17rem;
+            height: 12rem;
+        }
+
+        .about_intro_box {
+            position: relative;
+            color: white;
+        }
+
+        .about_intro_hide_box {
+            position: absolute;
+            background-color: rgb(13, 13, 119);
+        }
+
+        /* contact */
+        .contact {
+            background-color: rgb(111, 111, 214);
+            color: white;
+        }
+
+        .contact-text1 {
+            font-size: 2rem;
+        }
+
+        .contact-btn {
+            background-color: white;
+            color: rgb(32, 32, 34);
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 1rem;
+        }
+
+        .contact-btn:hover {
+            background-color: rgb(63, 129, 252);
+            color: white;
+        }
+
+        /* Mission */
+        .mission-img1 {
+            width: 16rem;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .mission-img2 {
+            width: 16rem;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .mission-img3 {
+            padding-top: 10px;
+            width: 15.5rem;
+            margin-left: 3rem;
+        }
+
+        .mission-main-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+
+        }
+
+        .accordion {
+            border: 1px solid gray;
+            margin-top: 2rem;
+        }
+
+        /* Customers feedback */
+        .Customers-feedback {
+            background-color: rgb(233, 232, 238);
+        }
+
+        .customers_feedback_box {
+            width: 18rem !important;
+            text-align: center;
+        }
+
+        .customers_feedback_box .fa-star {
+            color: yellow;
+        }
+
+        .customers_feedback_text1 {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* footer */
 
         .footer {
             background-image: url('./images/Bg.png');
@@ -49,24 +142,195 @@
 
         @media screen and (min-width: 481px) and (max-width: 1224px) {}
     </style>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt debitis, cumque quaerat corrupti aspernatur aut,
-    consequuntur accusamus velit sed vel laborum id mollitia reprehenderit possimus unde ut quam culpa molestiae.
-    <section class="Customers-feedback">
-<div class="contaoner">
-    <div class="row">
-        <h6 class=""><b>Customers Feedback</b></h6>
-        <div class="col customers_feedback">
-            <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim beatae dolore autem amet ipsa possimus corporis impedit, est rerum nam quasi qui eos cumque quibusdam officiis tenetur libero quod. Quasi!</div>
-            <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim beatae dolore autem amet ipsa possimus corporis impedit, est rerum nam quasi qui eos cumque quibusdam officiis tenetur libero quod. Quasi!</div>
-            <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim beatae dolore autem amet ipsa possimus corporis impedit, est rerum nam quasi qui eos cumque quibusdam officiis tenetur libero quod. Quasi!</div>
-            <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim beatae dolore autem amet ipsa possimus corporis impedit, est rerum nam quasi qui eos cumque quibusdam officiis tenetur libero quod. Quasi!</div>
-            <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim beatae dolore autem amet ipsa possimus corporis impedit, est rerum nam quasi qui eos cumque quibusdam officiis tenetur libero quod. Quasi!</div>
+    consequuntur accusamus velit sed velss laborum id mollitia reprehenderit possimus unde ut quam culpa molestiae.
+    <section class='about_intro'>
+        <div class="container">
+            <div class="row  d-flex justify-content-center about_intro_box">
+                <div class="col-sm-12 col-md-3 col-lg-3 m-0 p-0 ">
+
+                    <img class="about_intro_img" src="./images/Img Bg.png" alt="">
+
+                    <div class="about_intro_hide_box">
+                        <p class="hide_box_text"><b>Express Exterior</b></p>
+                        <a class="hide_box_link" href="#">VIEW DETAILS</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 m-0 p-0">
+
+                    <img class="about_intro_img" src="./images/Img Bg.png" alt="">
+
+                    <div class="about_intro_hide_box">
+                        <p class="hide_box_text"></p>
+                        <a class="hide_box_link" href="#"></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 m-0 p-0">
+
+                    <img class="about_intro_img" src="./images/Img Bg.png" alt="">
+
+                    <div class="about_intro_hide_box">
+                        <p class="hide_box_text"></p>
+                        <a class="hide_box_link" href="#"></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center p-5">
+                    <h5 class="contact-text1"><b>Do you need help with your vehicle?</b></h5>
+                    <p>Send us a message, or phone 1-800 123 4567 between 09:00 and 18:00 Monday to Saturday</p>
+                    <div class="col mt-5">
+                        <span class="m-1"><a class="contact-btn" href="#">BOOK APOINMENT</a></span>
+                        <span class="m-1"><a class="contact-btn" href="#">REQUEST A CALL BACK</a></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="mission pt-5 pb-5">
+        <div class="container">
+            <div class="row  d-flex justify-content-center">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <h5 class="mission-main-text">Our Mission,Vision,Values.</h5>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
+                                    accordion body.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more
+                                    representative of how this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-7 d-flex">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div>
+                            <img class="mission-img1" src="./images/Img Holder.png" alt="mission-img">
+                        </div>
+                        <div>
+                            <img class="mission-img2" src="./images/Img Holder2.png" alt="mission-img">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 ">
+                        <div> <img class="mission-img3" src="./images/Img Holder3.png" alt="mission-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Customers-feedback">
+        <div class="container p-5">
+            <h6 class="text-center customers_feedback_text1"><b>Customers Feedback</b></h6>
+            <div class="row customers_feedback d-flex">
+
+                <div class="card customers_feedback_box  p-3 m-3">
+                    <p>The quality of th wash was EXCELLENT.The only downside was that I hadn't realized that it was
+                        hand dried,so a tip was expected.</p>
+                    <p><b>Gregory Benford -</b>Customer</p>
+                    <p class="d-flex justify-content-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+
+                </div>
+                <div class="card customers_feedback_box  p-3 m-3">
+                    <p>The quality of th wash was EXCELLENT.The only downside was that I hadn't realized that it was
+                        hand dried,so a tip was expected.</p>
+                    <p><b>Gregory Benford -</b>Customer</p>
+                    <p class="d-flex justify-content-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+
+                </div>
+                <div class="card customers_feedback_box  p-3 m-3">
+                    <p>The quality of th wash was EXCELLENT.The only downside was that I hadn't realized that it was
+                        hand dried,so a tip was expected.</p>
+                    <p><b>Gregory Benford -</b>Customer</p>
+                    <p class="d-flex justify-content-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+
+                </div>
+                <div class="card customers_feedback_box  p-3 m-3">
+                    <p>The quality of th wash was EXCELLENT.The only downside was that I hadn't realized that it was
+                        hand dried,so a tip was expected.</p>
+                    <p><b>Gregory Benford -</b>Customer</p>
+                    <p class="d-flex justify-content-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
     </section>
     <footer class="footer p-5">
         <div class="container text-white">
@@ -139,11 +403,10 @@
             </div>
         </div>
     </footer>
-
-    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
