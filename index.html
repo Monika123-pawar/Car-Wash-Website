@@ -15,6 +15,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
         /* var textColor:black; */
+        :root {
+            --primaryColor: navy;
+        }
 
         * {
             padding: 0%;
@@ -141,12 +144,57 @@
         }
 
         /* pricing */
-        .price-box{
+        .price-box {
             border: 1px solid gray;
+            width: 14rem;
+            margin: 1rem;
         }
-        .price-box-text{
-            background: linear-gradient(to right ,rgba(247, 246, 246, 0.5),rgb(201, 198, 198,0.5));
 
+        .price-box :hover {
+            box-shadow: 9px 9px 9px 9px rgba(0, 0, 0, 0.2);
+        }
+
+        .price-box-text {
+            background: linear-gradient(to right, rgba(247, 246, 246, 0.5), rgb(201, 198, 198, 0.5));
+            padding: 1rem;
+            margin: 0;
+            border-bottom: 1px solid grey;
+        }
+
+        .price-box-text:hover {
+            background-color: var(--primaryColor);
+        }
+
+        .price_number {
+            font-size: 3rem;
+            padding-top: 10px;
+        }
+
+        .price-box ul {
+            list-style-type: none;
+            height: 20rem;
+        }
+
+        .price-box ul li::before {
+            content: "\2022";
+            color: var(--primaryColor);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .price-box .price_btn_link {
+            border: 1px solid navy;
+            color: rgb(31, 25, 25);
+            padding: 0.5rem 1rem;
+            margin: auto;
+            bottom: 0%;
+        }
+
+        .price-box .price_btn_link_box :hover {
+            color: white;
+            background-color: rgb(65, 132, 255);
+            border: none;
         }
 
         /* Customers feedback */
@@ -403,14 +451,13 @@
             <h5 class="text-center">Unlimited Wash Plans</h5>
             <p class="text-center">Wash whenever you want and enjoy the ease of auto monthly billing.</p>
             <div class="row d-flex justify-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-3 price-box">
-                    <p class="text-center price-box-text"><b>Express Wash</b></p>
-                    <hr>
-                    <span>
-                        <sup>$</sup>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-0 price-box">
+                    <p class="text-center price-box-text "><b>Express Wash</b></p>
+                    <div class="text-center price_number">
+                        <sup class="text-secondary">$</sup>
                         24
-                        <sup>99</sup>
-                    </span>
+                        <sup class="text-secondary">99</sup>
+                    </div>
                     <p class="text-center">Per month (include tax)</p>
                     <hr>
                     <ul class="">
@@ -419,7 +466,66 @@
                         <li>Spot-free Thermal dry</li>
                         <li>Rain shield</li>
                     </ul>
-                    <a class="price_btn_link text-decoration-none" href="#">JOIN NOW</a>
+                    <div class="p-4 text-center price_btn_link_box">
+                        <a class="price_btn_link text-decoration-none" href="#">JOIN NOW</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-0 price-box">
+                    <p class="text-center price-box-text "><b>Express Wash</b></p>
+                    <div class="text-center price_number">
+                        <sup class="text-secondary">$</sup>
+                        24
+                        <sup class="text-secondary">99</sup>
+                    </div>
+                    <p class="text-center">Per month (include tax)</p>
+                    <hr>
+                    <ul class="">
+                        <li>Soft-cloth Wash</li>
+                        <li>Spot-free Rinse</li>
+                        <li>Spot-free Thermal dry</li>
+                        <li>Rain shield</li>
+                    </ul>
+                    <div class="p-4 text-center price_btn_link_box">
+                        <a class="price_btn_link text-decoration-none" href="#">JOIN NOW</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-0 price-box">
+                    <p class="text-center price-box-text "><b>Express Wash</b></p>
+                    <div class="text-center price_number">
+                        <sup class="text-secondary">$</sup>
+                        24
+                        <sup class="text-secondary">99</sup>
+                    </div>
+                    <p class="text-center">Per month (include tax)</p>
+                    <hr>
+                    <ul class="">
+                        <li>Soft-cloth Wash</li>
+                        <li>Spot-free Rinse</li>
+                        <li>Spot-free Thermal dry</li>
+                        <li>Rain shield</li>
+                    </ul>
+                    <div class="p-4 text-center price_btn_link_box">
+                        <a class="price_btn_link text-decoration-none" href="#">JOIN NOW</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 p-0 price-box">
+                    <p class="text-center price-box-text "><b>Express Wash</b></p>
+                    <div class="text-center price_number">
+                        <sup class="text-secondary">$</sup>
+                        24
+                        <sup class="text-secondary">99</sup>
+                    </div>
+                    <p class="text-center">Per month (include tax)</p>
+                    <hr>
+                    <ul class="">
+                        <li>Soft-cloth Wash</li>
+                        <li>Spot-free Rinse</li>
+                        <li>Spot-free Thermal dry</li>
+                        <li>Rain shield</li>
+                    </ul>
+                    <div class="p-4 text-center price_btn_link_box">
+                        <a class="price_btn_link text-decoration-none" href="#">JOIN NOW</a>
+                    </div>
                 </div>
 
             </div>
